@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texas Web Design - Best Websites In Texas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .transition-custom {
+            transition: all 0.4s ease-in-out;
+        }
+    </style>
 </head>
 <body class="font-sans antialiased">
     <!-- Announcement Bar -->
@@ -17,18 +30,28 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
-                <h1 class="text-2xl font-bold text-blue-600">TWD</h1>
+                <a href="https://test-acc-12349.github.io/texas-web-design-2025-02-15-9xnqr" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-custom">TWD</a>
             </div>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
-                <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors">Benefits</a>
-                <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors">FAQ</a>
-                <a href="https://twd.com" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">Get Started</a>
+                <a href="#features" class="text-gray-600 hover:text-blue-600 transition-custom">Features</a>
+                <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-custom">Benefits</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-custom">Testimonials</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-custom">About Us</a>
+                <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-custom">FAQ</a>
+                <a href="https://twd.com" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-custom transform hover:scale-105">Get Started</a>
             </div>
-            <button class="md:hidden text-gray-600">
+            <button class="mobile-menu-button md:hidden text-gray-600" aria-label="Toggle mobile menu">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
+        <div class="mobile-menu hidden md:hidden">
+            <a href="#features" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Features</a>
+            <a href="#benefits" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Benefits</a>
+            <a href="#testimonials" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Testimonials</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">About Us</a>
+            <a href="#faq" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">FAQ</a>
+            <a href="https://twd.com" class="block px-4 py-2 text-white bg-blue-600 hover:bg-blue-700">Get Started</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -37,8 +60,8 @@
         <div class="absolute inset-0 flex items-center justify-center">
             <div class="text-center text-white px-4">
                 <h2 class="text-4xl md:text-6xl font-bold mb-4">Texas Web Design</h2>
-                <p class="text-xl md:text-2xl mb-8">Best Websites In Texas</p>
-                <a href="https://twd.com" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+                <p class="text-xl md:text-2xl mb-8">Creating Stunning Websites That Drive Results</p>
+                <a href="https://twd.com" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-custom transform hover:scale-105 shadow-lg hover:shadow-xl">
                     Start Your Project
                 </a>
             </div>
@@ -50,20 +73,20 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Premium Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-custom transform hover:scale-102">
                     <i class="fas fa-server text-4xl text-blue-600 mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Free Hosting</h3>
-                    <p class="text-gray-600">Premium hosting included with every website package</p>
+                    <p class="text-gray-600">Premium hosting included with every website package. Enjoy unlimited bandwidth and storage.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-custom transform hover:scale-102">
                     <i class="fas fa-bolt text-4xl text-blue-600 mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Fast Loading</h3>
-                    <p class="text-gray-600">Optimized for speed and performance</p>
+                    <p class="text-gray-600">Lightning-fast page loads with optimized code and CDN delivery.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-custom transform hover:scale-102">
                     <i class="fas fa-paint-brush text-4xl text-blue-600 mb-4"></i>
                     <h3 class="text-xl font-semibold mb-4">Custom Design</h3>
-                    <p class="text-gray-600">Unique designs tailored to your brand</p>
+                    <p class="text-gray-600">Unique designs tailored to your brand identity and business goals.</p>
                 </div>
             </div>
         </div>
@@ -72,10 +95,11 @@
     <!-- Video Section -->
     <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Watch How We Work</h2>
             <div class="max-w-4xl mx-auto">
-                <div class="relative" style="padding-bottom: 56.25%">
+                <div class="relative rounded-xl shadow-lg overflow-hidden" style="padding-bottom: 56.25%">
                     <iframe 
-                        class="absolute inset-0 w-full h-full rounded-xl shadow-lg"
+                        class="absolute inset-0 w-full h-full"
                         src="https://www.youtube.com/embed/-Jl9l3O9Hm8"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -91,36 +115,77 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Us</h2>
             <div class="space-y-24">
-                <!-- Benefit 1 -->
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="md:w-1/2">
-                        <h3 class="text-2xl font-semibold mb-4">Low Cost</h3>
-                        <p class="text-gray-600 mb-6">Premium websites at competitive prices</p>
+                        <h3 class="text-2xl font-semibold mb-4">Affordable Excellence</h3>
+                        <p class="text-gray-600 mb-6">Premium websites at competitive prices, designed to fit your budget while exceeding expectations.</p>
                     </div>
                     <div class="md:w-1/2">
-                        <img src="https://source.unsplash.com/random/800x600?website" alt="Low Cost" class="rounded-xl shadow-lg">
+                        <img src="https://source.unsplash.com/random/800x600?website" alt="Affordable Excellence" class="rounded-xl shadow-lg hover:shadow-xl transition-custom">
                     </div>
                 </div>
-                <!-- Benefit 2 -->
                 <div class="flex flex-col-reverse md:flex-row items-center gap-8">
                     <div class="md:w-1/2">
-                        <img src="https://source.unsplash.com/random/800x600?marketing" alt="High CTR" class="rounded-xl shadow-lg">
+                        <img src="https://source.unsplash.com/random/800x600?marketing" alt="High Conversion Rates" class="rounded-xl shadow-lg hover:shadow-xl transition-custom">
                     </div>
                     <div class="md:w-1/2">
-                        <h3 class="text-2xl font-semibold mb-4">High CTR</h3>
-                        <p class="text-gray-600 mb-6">Optimized for maximum conversion rates</p>
+                        <h3 class="text-2xl font-semibold mb-4">High Conversion Rates</h3>
+                        <p class="text-gray-600 mb-6">Strategically designed layouts and calls-to-action that turn visitors into customers.</p>
                     </div>
                 </div>
-                <!-- Benefit 3 -->
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="md:w-1/2">
-                        <h3 class="text-2xl font-semibold mb-4">SEO Optimized</h3>
-                        <p class="text-gray-600 mb-6">Rank higher in search results</p>
+                        <h3 class="text-2xl font-semibold mb-4">SEO Mastery</h3>
+                        <p class="text-gray-600 mb-6">Advanced search engine optimization techniques to ensure your website ranks higher and attracts more visitors.</p>
                     </div>
                     <div class="md:w-1/2">
-                        <img src="https://source.unsplash.com/random/800x600?seo" alt="SEO" class="rounded-xl shadow-lg">
+                        <img src="https://source.unsplash.com/random/800x600?seo" alt="SEO Mastery" class="rounded-xl shadow-lg hover:shadow-xl transition-custom">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-custom">
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"TWD transformed our online presence. Our conversion rate increased by 150% in just two months!"</p>
+                    <div class="font-semibold">Sarah Johnson</div>
+                    <div class="text-sm text-gray-500">CEO, Tech Solutions Inc</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-custom">
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"The team's attention to detail and responsive design expertise made all the difference. Our mobile traffic has doubled!"</p>
+                    <div class="font-semibold">Michael Chang</div>
+                    <div class="text-sm text-gray-500">Marketing Director, Retail Plus</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-custom">
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"Professional, creative, and incredibly efficient. The best web design investment we've made."</p>
+                    <div class="font-semibold">Emma Rodriguez</div>
+                    <div class="text-sm text-gray-500">Owner, Style Boutique</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-custom">
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"Outstanding SEO results and beautiful design. Our site now ranks #1 for our target keywords."</p>
+                    <div class="font-semibold">David Wilson</div>
+                    <div class="text-sm text-gray-500">Founder, Digital First</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Us</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-600 mb-8">Founded in 2015, Texas Web Design began with a simple mission: to provide Texas businesses with world-class websites at affordable prices. Our journey started with a small team of passionate designers and developers who believed in the power of great web design to transform businesses.</p>
+                <p class="text-gray-600">Today, we're proud to be Texas's leading web design agency, driven by our core values of excellence, innovation, and client satisfaction. We believe in creating websites that not only look stunning but also deliver measurable results for our clients' businesses.</p>
             </div>
         </div>
     </section>
@@ -130,35 +195,31 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-4">
-                <div class="border rounded-lg p-4">
-                    <button class="flex justify-between items-center w-full">
-                        <span class="font-semibold">How long does it take to build a website?</span>
-                        <i class="fas fa-plus"></i>
-                    </button>
+                <div class="border rounded-lg p-6 hover:shadow-md transition-custom">
+                    <h3 class="text-xl font-semibold mb-2">How long does it take to build a website?</h3>
+                    <p class="text-gray-600">Most projects are completed within 2-4 weeks, depending on the complexity and your feedback timeline. We provide a detailed project schedule at the start.</p>
                 </div>
-                <div class="border rounded-lg p-4">
-                    <button class="flex justify-between items-center w-full">
-                        <span class="font-semibold">What's included in the hosting?</span>
-                        <i class="fas fa-plus"></i>
-                    </button>
+                <div class="border rounded-lg p-6 hover:shadow-md transition-custom">
+                    <h3 class="text-xl font-semibold mb-2">What's included in the hosting?</h3>
+                    <p class="text-gray-600">Our hosting package includes unlimited bandwidth, SSL certificate, daily backups, and 24/7 security monitoring.</p>
                 </div>
-                <div class="border rounded-lg p-4">
-                    <button class="flex justify-between items-center w-full">
-                        <span class="font-semibold">Do you offer maintenance services?</span>
-                        <i class="fas fa-plus"></i>
-                    </button>
+                <div class="border rounded-lg p-6 hover:shadow-md transition-custom">
+                    <h3 class="text-xl font-semibold mb-2">Do you offer maintenance services?</h3>
+                    <p class="text-gray-600">Yes, we offer monthly maintenance plans that include updates, security patches, content changes, and technical support.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-blue-600 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Get Started?</h2>
-            <p class="text-xl mb-8">Contact us today to discuss your project</p>
-            <a href="mailto:admin@twd.com" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
-                Contact Us
+    <section class="py-24 bg-blue-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-blue-800/90 z-10"></div>
+        <img src="https://source.unsplash.com/random/1920x1080?technology" alt="Technology Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="container mx-auto px-4 text-center relative z-20">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Online Presence?</h2>
+            <p class="text-xl mb-8">Let's create something amazing together</p>
+            <a href="mailto:admin@twd.com" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-custom transform hover:scale-105 shadow-lg hover:shadow-xl">
+                Start Your Journey
             </a>
         </div>
     </section>
@@ -169,26 +230,39 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">TWD</h3>
-                    <p class="text-gray-400">Best Websites In Texas</p>
+                    <p class="text-gray-400">Building Texas's Digital Future</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
-                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors">Benefits</a></li>
-                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-custom">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-custom">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-custom">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-custom">About Us</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-custom">FAQ</a></li>
+                        <li><a href="https://test-acc-12349.github.io/texas-web-design-2025-02-15-9xnqr/blog.html" class="text-gray-400 hover:text-white transition-custom">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <p class="text-gray-400">admin@twd.com</p>
+                    <p class="text-gray-400 mb-2">admin@twd.com</p>
+                    <p class="text-gray-400 mb-2">1-800-TWD-TECH</p>
+                    <p class="text-gray-400">123 Tech Street, Austin, TX</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://test-acc-12349.github.io/texas-web-design-2025-02-15-9xnqr/privacy.html" class="text-gray-400 hover:text-white transition-custom">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/texas-web-design-2025-02-15-9xnqr/terms.html" class="text-gray-400 hover:text-white transition-custom">Terms of Service</a></li>
+                    </ul>
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition-custom"><i class="fab fa-facebook text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-custom"><i class="fab fa-twitter text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-custom"><i class="fab fa-instagram text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-custom"><i class="fab fa-linkedin text-xl"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,5 +271,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
